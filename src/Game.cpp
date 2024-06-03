@@ -40,13 +40,13 @@ void Game::checkMinimumDimensions(int x, int y) {
     interface.stop();
     auto minxdef = utils::MIN_X * utils::SCALE;
     auto minydef = utils::MIN_Y * utils::SCALE;
-    cout << "Seu terminal é muito pequeno para executar este programa. Definição mínima é de " << minxdef << " x "
-         << minydef << "." << endl; // TODO: tratamenro definitivo
+    cout << "Your terminal is too small. The minimum size required is " << minxdef << " x "
+         << minydef << "." << endl;
     exit(1);
   }
 }
 
-void Game::checkOverState(void) { // TODO: definitivo
+void Game::checkOverState(void) {
   switch (state->over) {
   case -1:
     interface.stop();
@@ -108,7 +108,7 @@ void Game::startGameThreads(void) {
 
       utils::Types::AlienProps *props = new utils::Types::AlienProps;
       props->state = state;
-      props->playableArea = interface.getPlayableArea(); // TODO: optimize
+      props->playableArea = interface.getPlayableArea();
       props->id = cnt;
 
       pthread_t thread;

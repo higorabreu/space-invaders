@@ -56,7 +56,7 @@ namespace utils {
       GameState *state;
       int playerPosX;
     };
-  } // namespace Types
+  }
 
   std::string currentUnixTime(void);
   void create_directory(const std::string &path);
@@ -71,16 +71,16 @@ namespace utils {
   const int ENEMY_MOV_SPEED_FACT = 100000;
   const int MISSILE_MOV_SPEED_FACT = 62500;
   const int MAX_MISSILE_CAPACITY = 6;
-  const int MISSILE_GENERATOR_INTERVAL = 1; // SECS
-  const int INPUT_INTERVAL = 20000;         // USECS
-  const int TIME_LIMIT = 90;                // SECS
+  const int MISSILE_GENERATOR_INTERVAL = 1; 
+  const int INPUT_INTERVAL = 20000;       
+  const int TIME_LIMIT = 90;               
   const int FR = 33;
   const int FR_MODIFIER = 1000;
   const int SCALE = 3;
   const int MIN_X = (ENEMIES_PER_ROW * ENEMY_SPACING) + 1;
   const int MIN_Y = 5;
-  const int TIMER_POS = 3; // 0 TOP LEFT ; 1 TOP RIGHT ; 2  BOTTOM LEFT ; 3 BOTTOM RIGHT
+  const int TIMER_POS = 3; 
   const int AMMO_COUNTER_POS = 0;
-} // namespace utils
+} 
 
 #endif

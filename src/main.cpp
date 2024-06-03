@@ -21,13 +21,13 @@ int main(void) {
 int getDifficultyLevel(void) {
   int d;
 
-  std::cout << "Selecione o nível de dificuldade entre:" << std::endl;
+  std::cout << "Select the difficulty level:" << std::endl;
   std::cout << "1 - Fácil" << std::endl;
   std::cout << "2 - Médio" << std::endl;
   std::cout << "3 - Difícil" << std::endl;
   std::cin >> d;
   if (d <= 0 || d > 3) {
-    std::cout << "Nível de dificuldade deve ser entre 1 e 3" << std::endl;
+    std::cout << "Select a value between 1 and 3." << std::endl;
     exit(1);
   }
 
